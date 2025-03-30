@@ -20,4 +20,4 @@ while len(mao) < 5:
 
 print(f'Há {len(baralho)} cartas no baralho. ')
 print('As cartas do jogador são: ')
-print(mao)
+print(maozinha de criança)
