@@ -1,0 +1,23 @@
+import random
+
+naipes = ['Copas', 'Espadas', 'Ouros', 'Paus']
+cartas = ['2', '3', '4', '5', '6', '7','8', '9', '10', 'Valete', 'Dama', 'Rei', 'Ás']
+baralho = []
+
+for naipe in naipes:
+    for carta in cartas:
+        baralho.append(f'{carta} de {naipe}')
+print(f'Há {len(baralho)} cartas no baralho. ')
+
+print('Embaralhando . . .')
+
+mao = []
+
+while len(mao) < 5:
+    item = random.choice(baralho)
+    baralho.remove(item)
+    mao.append(item)
+
+print(f'Há {len(baralho)} cartas no baralho. ')
+print('As cartas do jogador são: ')
+print(mao)
